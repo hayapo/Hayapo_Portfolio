@@ -1,4 +1,4 @@
-const siteTitle = `Gatsby Starter hpp`;
+const siteTitle = `Hayapo Portfolio`;
 const siteUrl = `https://gatsby-starter-hpp.netlify.com`;
 const siteDescription = `simple gatsby starter with mdx, typescript, pwa`;
 const backgroundColor = `#09090f`;
@@ -6,17 +6,17 @@ const themeColor = `#09090f`;
 
 const siteMetadata = {
   siteTitle,
-  siteTitleAlt: `Gatsby Starter hpp - @hppRC/gatsby-starter-hpp`,
-  siteHeadline: `Gatsby Starter hpp - Gatsby Starter from @hppRC`,
+  siteTitleAlt: ``,
+  siteHeadline: ``,
   siteUrl,
   siteDescription,
   siteLanguage: `en`,
-  author: `@hpp_ricecake`, // twitter account id
+  author: `@hayapo_hip`, // twitter account id
   basePath: `/`,
   social: {
-    twitter: `https://twitter.com/hpp_ricecake`,
-    github: `https://github.com/hppRC`,
-    qiita: `https://qiita.com/hppRC`,
+    twitter: `https://twitter.com/hayapo_hip`,
+    github: `https://github.com/hayapo`,
+    qiita: `https://qiita.com/hayapo`,
   },
 };
 
@@ -98,7 +98,7 @@ export default {
         background_color: backgroundColor,
         theme_color: themeColor,
         display: `standalone`,
-        icon: `./assets/icon.png`,
+        icon: `./assets/square_icon.png`,
       },
     },
     `gatsby-plugin-offline`,

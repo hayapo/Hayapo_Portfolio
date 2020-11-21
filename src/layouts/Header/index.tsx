@@ -1,13 +1,53 @@
 import { Link } from 'gatsby';
-import React from 'react';
+import React,    from 'react';
 
 import styled from '@emotion/styled';
 
-import ModeButton from './mode-button';
+import { css } from '@emotion/core';
+
+import {
+  colors,
+  sizes,
+  fontSizes,
+  typography,
+  mq,
+} from '../../theme';
+
+const HeaderLogo = css({
+  marginRight: 'auto',
+  '& a': {
+    '& img': {
+      borderRadius: '50%',
+    },
+  },
+});
+
+const data = useStaticQuery<
+GatsbyTypes.MyQueryQuery
+>(graphql`
+query MyQuery {
+  file(relativePath: { eq: "icon.png" }) {
+    childImageSharp {
+      fixed(width: 48, height: 48) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+}
+`);
 
 const Component: React.FCX = ({ className }) => (
-  <header className={className}>
-    <h1>Gatsby starter hpp</h1>
+  <header className={className}
+  >
+    <div css={HeaderLogo}>
+      <Link to="/" aria-label="HOME">
+        {/* TODO:undefiendの処理を行う */}
+        <Img
+          fixed={data.file!.childImageSharp!.fixed}
+          alt="Logo"
+        />
+      </Link>
+    </div>
     <nav>
       <ul>
         <li>
@@ -22,19 +62,16 @@ const Component: React.FCX = ({ className }) => (
         <li>
           <Link to='/404'>404</Link>
         </li>
-        <li>
-          <ModeButton />
-        </li>
       </ul>
     </nav>
   </header>
 );
 
 const StyledComponent = styled(Component)`
-  position: fixed;
+  position: flex;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   width: 100%;

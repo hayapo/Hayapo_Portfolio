@@ -28,7 +28,7 @@ export default (filename: string): FluidObject | undefined => {
           node {
             relativePath
             childImageSharp {
-              fluid(maxWidth: 1400, quality: 90) {
+              fluid(maxWidth: 400, quality: 90) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }

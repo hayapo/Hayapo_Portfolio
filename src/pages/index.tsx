@@ -6,8 +6,10 @@ import styled from '@emotion/styled';
 
 const Component: React.FCX = ({ className }) => (
   <main className={className}>
-    <h1>this is Component page!</h1>
-    <AnyImage filename='banner.png' />
+    <h1>Welcome to this site!</h1>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, justifyContent: 'center' }}>
+      <AnyImage filename='circle_icon.png'></AnyImage>
+    </div>
   </main>
 );
 

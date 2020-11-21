@@ -75,7 +75,7 @@ type JsonLdConfigProps = DeepReadonly<
 const SEO: React.FCX<Props> = ({ title = ``, description = ``, pathname = ``, image = `` }) => {
   const metadata = useSiteMetadata() || {};
   const buildTime = useSiteBuildTime();
-  const icon = useAnyImage(`icon.png`);
+  const icon = useAnyImage(`square_icon.png`);
   const banner = useAnyImage(`banner.png`);
 
   const {

@@ -4,7 +4,7 @@ export default css`
   flex: 1;
 
   width: 100%;
-  max-width: 1400px;
+  max-width: 700px;
   padding: 10vh 2vw 5vw 2vw;
 
   margin: 0 auto;
