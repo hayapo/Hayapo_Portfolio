@@ -11,7 +11,8 @@ import {
   SubTitle,
   Icon,
   Paragraph,
-  LinkText
+  LinkText,
+  Table,
 } from '../components/atoms';
 
 
@@ -66,6 +67,12 @@ const Component: React.FCX = ({ className }) => (
           <SubTitle>僕について</SubTitle>
             <div className="paragraph">
               <Paragraph>
+                埼玉県出身で現在は名古屋住み。
+              </Paragraph>
+              <Paragraph>
+                しかし応援球団はソフトバンクホークス
+              </Paragraph>
+              <Paragraph>
                 名古屋大学情報学部人間社会情報学科に在籍してます
               </Paragraph>
               <Paragraph>
@@ -73,6 +80,17 @@ const Component: React.FCX = ({ className }) => (
               </Paragraph>
               <Paragraph>
                 川合伸幸先生のゼミに所属してます
+              </Paragraph>
+            </div>
+        </section>
+        <section className="profile">
+          <SubTitle>研究とか</SubTitle>
+            <div className="paragraph">
+              <Paragraph>
+                ComputerScienceと認知科学に興味があります。
+              </Paragraph>
+              <Paragraph>
+                まだ決まっていませんが、HapticsとかVRに関わる研究をしたいです
               </Paragraph>
             </div>
         </section>
@@ -89,15 +107,26 @@ const Component: React.FCX = ({ className }) => (
               HIPHOPが大好きで、起きてる時間の大半はHIPHOPを聞いてます
             </Paragraph>
             <Paragraph>
-              好きなラッパーは
+              好きなラッパーはTohjiさん
               <LinkText
                   href={
-                    'https://microcms.io/blog/what-is-jamstack/'
+                    'https://linkco.re/pdFPdhrp'
                   }
                 ></LinkText>
+              とか、FujiTaito
+              <LinkText
+                  href={
+                    'https://linkco.re/FNHTEy33'
+                  }
+                ></LinkText>
+                さんです
             </Paragraph>
           </div>
         </section>
+        <section className="career">
+            <SubTitle>Hayapoのタイムライン</SubTitle>
+            <Table />
+          </section>
       </article>
     </section>
   </main>

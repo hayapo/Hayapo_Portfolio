@@ -18,6 +18,8 @@ export const LinkText: React.FC<Props> = ({
     <a
       href={href}
       ref={ref}
+      target="_blank" 
+      rel="noopener noreferrer"
       css={{
         textDecoration: 'none',
         color: colors.blue,
