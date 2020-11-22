@@ -22,13 +22,8 @@ export const Table: React.FC = ({ children }) => {
         borderTop: `solid ${sizes[1]} ${colors.blue}`,
         borderBottom: `solid ${sizes[1]} ${colors.blue}`,
         borderCollapse: 'collapse',
-        '& caption': {
-          fontSize: fontSizes.lg,
-          color: colors.blue,
-          fontWeight: typography.fontWeights.black,
-        },
         '& thead': {
-          background: `${color(colors.blue).fade(0.6)}`,
+          background: `${color(colors.lightBlue).fade(0.6)}`,
           '& tr th': {
             color: colors.white,
             fontWeight: typography.fontWeights.black,
