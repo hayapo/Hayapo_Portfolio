@@ -28,7 +28,7 @@ export const Table: React.FC = ({ children }) => {
             color: colors.white,
             fontWeight: typography.fontWeights.black,
             paddingLeft: sizes[12],
-            borderBottom: `dashed ${sizes[1]} ${color(
+            borderBottom: `groove ${sizes[1]} ${color(
               colors.blue,
             ).fade(0.4)}`,
           },
@@ -38,7 +38,7 @@ export const Table: React.FC = ({ children }) => {
             color: colors.blue,
             fontWeight: typography.fontWeights.black,
             paddingLeft: sizes[8],
-            borderBottom: `dashed ${sizes[1]} ${color(
+            borderBottom: `groove ${sizes[1]} ${color(
               colors.blue,
             ).fade(0.4)}`,
           },

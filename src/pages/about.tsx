@@ -22,14 +22,14 @@ const AboutContainer = css({
   '& article': {
     '& .profile': {
       margin: `${sizes[16]} auto`,
-      textAlign: 'center',
+      textAlign: 'left',
       '& .paragraph': {
         marginTop: sizes[16],
       },
     },
     '& .career': {
       margin: `${sizes[32]} auto`,
-      textAlign: 'center',
+      textAlign: 'left',
     },
   },
 });
