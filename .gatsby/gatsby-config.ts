@@ -102,5 +102,17 @@ export default {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-source-microcms',
+      options: {
+        apiKey: `${process.env.GATSBY_MICRO_CMS_API_KEY}`,
+        serviceId: 'Hayapo_Portfolio',
+        apis: [
+          {
+            endpoint: 'hayapo_portfolio',
+          },
+        ],
+      },
+    },
   ],
 };

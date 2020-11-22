@@ -2,6 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import { FiTwitter, FiGithub} from 'react-icons/fi';
+import { SiQiita } from 'react-icons/si';
 import {
   colors,
   sizes,
@@ -33,6 +34,10 @@ const FooterLink = css({
           width: '150%',
           height: '150%',
       },
+      '& .qiita': {
+        width: '150%',
+        height: '150%',
+    },
   },
   '& a:hover': {
   color: colors.lightBlue,
@@ -60,6 +65,14 @@ const Footer: React.FCX = ({ className }) => (
                 aria-label="Github"
             >
                 <FiGithub className="github" />
+            </a>
+            <a
+                href="https://qiita.com/hayapo"
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="qiita"
+            >
+                <SiQiita className="qiita" />
             </a>
         </div>
     </div>
