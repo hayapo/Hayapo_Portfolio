@@ -1,17 +1,8 @@
-import { Link } from 'gatsby';
-import React,    from 'react';
-
+import { Link,useStaticQuery,graphql } from 'gatsby';
+import React from 'react';
+import Img from 'gatsby-image';
 import styled from '@emotion/styled';
-
 import { css } from '@emotion/core';
-
-import {
-  colors,
-  sizes,
-  fontSizes,
-  typography,
-  mq,
-} from '../../theme';
 
 const HeaderLogo = css({
   marginRight: 'auto',
@@ -22,50 +13,46 @@ const HeaderLogo = css({
   },
 });
 
-const data = useStaticQuery<
-GatsbyTypes.MyQueryQuery
->(graphql`
-query MyQuery {
-  file(relativePath: { eq: "icon.png" }) {
-    childImageSharp {
-      fixed(width: 48, height: 48) {
-        ...GatsbyImageSharpFixed
-      }
-    }
-  }
-}
-`);
 
-const Component: React.FCX = ({ className }) => (
-  <header className={className}
-  >
-    <div css={HeaderLogo}>
-      <Link to="/" aria-label="HOME">
-        {/* TODO:undefiendの処理を行う */}
-        <Img
-          fixed={data.file!.childImageSharp!.fixed}
-          alt="Logo"
-        />
-      </Link>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <Link to='/'>Top</Link>
-        </li>
-        <li>
-          <Link to='/about'>About</Link>
-        </li>
-        <li>
-          <Link to='/contact'>Contact</Link>
-        </li>
-        <li>
-          <Link to='/404'>404</Link>
-        </li>
-      </ul>
-    </nav>
-  </header>
-);
+
+const Component: React.FCX = ({ className }) => {
+    const data = useStaticQuery(graphql`
+    query MyQuery {
+      file(relativePath: { eq: "circle_icon.png" }) {
+        childImageSharp {
+          fixed(width: 90, height: 90) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      } 
+    }
+  `);
+
+  return (
+    <header className={className}
+    >
+      <div css={HeaderLogo}>
+        <Link to="/" aria-label="HOME">
+          {/* TODO:undefiendの処理を行う */}
+          <Img
+            fixed={data.file!.childImageSharp!.fixed}
+            alt="Logo"
+          />
+        </Link>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <Link to='/about'>About</Link>
+          </li>
+          <li>
+            <Link to='/contact'>Contact</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  )
+};
 
 const StyledComponent = styled(Component)`
   position: flex;

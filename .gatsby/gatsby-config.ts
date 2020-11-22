@@ -1,4 +1,4 @@
-const siteTitle = `Hayapo Portfolio`;
+const siteTitle = `Hayapo`;
 const siteUrl = `https://gatsby-starter-hpp.netlify.com`;
 const siteDescription = `simple gatsby starter with mdx, typescript, pwa`;
 const backgroundColor = `#09090f`;

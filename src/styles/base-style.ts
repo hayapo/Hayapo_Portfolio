@@ -1,12 +1,12 @@
 import { css } from '@emotion/core';
 
 export default css`
-  flex: 1;
+  flex: 0;
 
   width: 100%;
   max-width: 700px;
-  padding: 10vh 2vw 5vw 2vw;
-
+  padding: 2vh 2vw 5vw 2vw;
+  list-style: none;
   margin: 0 auto;
 
   > h1 {
