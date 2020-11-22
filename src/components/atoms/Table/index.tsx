@@ -66,7 +66,8 @@ export const Table: React.FC = ({ children }) => {
         </tr>
         <tr>
           <td>2015</td>
-          <td>春日部高等学校入学</td>
+          <td>
+            春日部高等学校入学</td>
         </tr>
         <tr>
           <td>2018</td>
