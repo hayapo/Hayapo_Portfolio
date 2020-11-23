@@ -16,7 +16,7 @@ const HeaderLogo = css({
 
 
 const Component: React.FCX = ({ className }) => {
-    const data = useStaticQuery(graphql`
+    const data = useStaticQuery<GatsbyTypes.MyQueryQuery>(graphql`
     query MyQuery {
       file(relativePath: { eq: "circle_icon.png" }) {
         childImageSharp {
@@ -46,7 +46,7 @@ const Component: React.FCX = ({ className }) => {
             <Link to='/about'>About</Link>
           </li>
           <li>
-            <Link to='/contact'>Contact</Link>
+            <Link to='/skill'>Skills</Link>
           </li>
         </ul>
       </nav>

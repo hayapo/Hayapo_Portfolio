@@ -4,6 +4,10 @@ const siteDescription = `simple gatsby starter with mdx, typescript, pwa`;
 const backgroundColor = `#09090f`;
 const themeColor = `#09090f`;
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 const siteMetadata = {
   siteTitle,
   siteTitleAlt: ``,
@@ -34,6 +38,7 @@ export default {
     `gatsby-plugin-root-import`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-lodash`,
+    `gatsby-plugin-typegen`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -102,17 +107,5 @@ export default {
       },
     },
     `gatsby-plugin-offline`,
-    {
-      resolve: 'gatsby-source-microcms',
-      options: {
-        apiKey: `${process.env.GATSBY_MICRO_CMS_API_KEY}`,
-        serviceId: 'Hayapo_Portfolio',
-        apis: [
-          {
-            endpoint: 'hayapo_portfolio',
-          },
-        ],
-      },
-    },
   ],
 };

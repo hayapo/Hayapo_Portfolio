@@ -1,13 +1,27 @@
 import React from 'react';
 import { AnyImage, SEO } from 'src/components';
 import { baseStyle } from 'src/styles';
-
+import { css } from '@emotion/core';
+import { sizes, mq, colors } from '../theme';
 import styled from '@emotion/styled';
+import {
+  Title,
+  SubTitle,
+  Icon,
+  Paragraph,
+  LinkText,
+  Table,
+} from '../components/atoms';
+
+const HeroImage = css({
+  maxWidth: 640,
+  margin: '0 auto',
+});
 
 const Component: React.FCX = ({ className }) => (
   <main className={className}>
-    <h1>Welcome my site!</h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, justifyContent: 'center' }}>
+    <Title color={colors.blue}>Welcome my site!</Title>
+    <div css={HeroImage}>
       <AnyImage filename='square_icon.png'></AnyImage>
     </div>
   </main>

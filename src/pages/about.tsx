@@ -124,7 +124,7 @@ const Component: React.FCX = ({ className }) => (
           </div>
         </section>
         <section className="career">
-            <SubTitle>Hayapoのタイムライン</SubTitle>
+            <SubTitle>タイムライン</SubTitle>
             <Table />
           </section>
       </article>

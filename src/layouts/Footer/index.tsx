@@ -72,7 +72,7 @@ const Footer: React.FCX = ({ className }) => (
                 rel="noopener noreferrer"
                 aria-label="qiita"
             >
-                <SiQiita className="qiita" />
+                <SiQiita className="qiita"></SiQiita>
             </a>
         </div>
     </div>
