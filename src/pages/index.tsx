@@ -14,7 +14,7 @@ import {
 } from '../components/atoms';
 
 const HeroImage = css({
-  maxWidth: 640,
+  maxWidth: 500,
   margin: '0 auto',
 });
 
@@ -22,7 +22,7 @@ const Component: React.FCX = ({ className }) => (
   <main className={className}>
     <Title color={colors.blue}>Welcome my site!</Title>
     <div css={HeroImage}>
-      <AnyImage filename='square_icon.png'></AnyImage>
+      <AnyImage filename='HeroImage.png'></AnyImage>
     </div>
   </main>
 );

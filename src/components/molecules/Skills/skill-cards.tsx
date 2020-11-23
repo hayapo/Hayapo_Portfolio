@@ -14,8 +14,8 @@ export const StyledSkillCards = styled(SkillCards)`
     ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 4rem;
-        padding: 4rem 0;
+        grid-gap: 8rem;
+        padding: 0rem 0;
         width: 100%;
 
         li {

@@ -2846,19 +2846,6 @@ type Unnamed_1_Query = { readonly images: { readonly edges: ReadonlyArray<{ read
         & { readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }
       ) }> } };
 
-type Unnamed_2_QueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type Unnamed_2_Query = { readonly site: Maybe<Pick<Site, 'buildTime'>> };
-
-type Unnamed_3_QueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type Unnamed_3_Query = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
-      Pick<SiteSiteMetadata, 'siteTitle' | 'siteTitleAlt' | 'siteHeadline' | 'siteUrl' | 'siteDescription' | 'siteLanguage' | 'author'>
-      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'qiita'>> }
-    )> }> };
-
 type MyQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -2914,9 +2901,22 @@ type GatsbyImageSharpSizes_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio
 
 type GatsbyImageSharpSizes_withWebp_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
+type Unnamed_2_QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type Unnamed_2_Query = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
+      Pick<SiteSiteMetadata, 'siteTitle' | 'siteTitleAlt' | 'siteHeadline' | 'siteUrl' | 'siteDescription' | 'siteLanguage' | 'author'>
+      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'qiita'>> }
+    )> }> };
+
 type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type PagesQueryQuery = { readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
+
+type Unnamed_3_QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type Unnamed_3_Query = { readonly site: Maybe<Pick<Site, 'buildTime'>> };
 
 }

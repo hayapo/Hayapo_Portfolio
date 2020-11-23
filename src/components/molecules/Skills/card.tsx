@@ -7,8 +7,8 @@ import { useInView } from 'react-intersection-observer';
 import data from './skill-data';
 
 import { sizes, colors, mq, typography, } from '../../../theme';
-import { BottomIn } from '../../../keyframes';
-
+import { BottomIn, LeftIn } from '../../../keyframes';
+import { SubTitle} from '../../atoms/SubTitle'
 type Props = {
     id: string;
 };
@@ -21,15 +21,15 @@ const Card: React.FCX<Props> = ({ className, id, children }) => {
     return (
         <div className={className} id={id} ref={ref}
             css={{
-                margin: sizes[8],
+                margin: sizes[4],
                 display: 'flex',
                 opacity: inView ? 1 : 0,
-                animation: inView
-                ? `${BottomIn} 0.5s ease-out`
-                : 0,
+                
                 '& .SkillStackItemContent': {
                 marginLeft: sizes[2],
                 alignItems: 'center',
+                animation: inView
+                ? `${LeftIn} 0.5s ease-out`:0,
                 '& h2': {
                     color: colors.black,
                     alignItems: 'center',
@@ -45,6 +45,9 @@ const Card: React.FCX<Props> = ({ className, id, children }) => {
                     marginTop: sizes[3],
                     marginLeft: sizes[0],
                     background: `linear-gradient(transparent 50%, #CCCC66 50%)`,
+                },
+                '& i':{
+                    animation: inView ? `${LeftIn} 0.5s ease-out`:0,
                 },
                 [mq[1]]: {
                     marginLeft: sizes[6],

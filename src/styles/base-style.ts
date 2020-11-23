@@ -3,8 +3,8 @@ import { css } from '@emotion/core';
 export default css`
   flex: 0;
 
-  width: 100%;
-  max-width: 700px;
+  width: 80%;
+  max-width: 1300px;
   padding: 2vh 2vw 5vw 2vw;
   list-style: none;
   margin: 0 auto;

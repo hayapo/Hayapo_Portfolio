@@ -46,7 +46,7 @@ const Component: React.FCX = ({ className }) => {
             <Link to='/about'>About</Link>
           </li>
           <li>
-            <Link to='/skill'>Skills</Link>
+            <Link to='/skills'>Skills</Link>
           </li>
         </ul>
       </nav>

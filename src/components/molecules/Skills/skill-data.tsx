@@ -15,7 +15,7 @@ type Data = {
 
 const data: Data = {
   python: { icon: <SiPython />, title: 'Python' },
-  cpp: { icon: null, title: 'C/C++' },
+  cpp: { icon: null, title: 'C++' },
   react: { icon: <SiReact />, title: 'React' },
   vuejs: { icon: <FaVuejs />, title: 'Vue.js'},
   r: { icon: null, title: 'R' },

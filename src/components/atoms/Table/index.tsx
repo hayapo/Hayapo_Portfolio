@@ -18,26 +18,28 @@ export const Table: React.FC = ({ children }) => {
       ref={ref}
       css={{
         margin: `${sizes[16]} auto`,
-        width: '100%',
         borderTop: `solid ${sizes[1]} ${colors.blue}`,
         borderBottom: `solid ${sizes[1]} ${colors.blue}`,
         borderCollapse: 'collapse',
+        width: '100%',
+        textAlign: 'center  ',
         '& thead': {
           background: `${color(colors.lightBlue).fade(0.6)}`,
           '& tr th': {
             color: colors.white,
             fontWeight: typography.fontWeights.black,
-            paddingLeft: sizes[12],
+            paddingLeft: sizes[0],
             borderBottom: `groove ${sizes[1]} ${color(
               colors.blue,
             ).fade(0.4)}`,
           },
         },
         '& tbody': {
+          
           '& tr td': {
             color: colors.blue,
             fontWeight: typography.fontWeights.black,
-            paddingLeft: sizes[8],
+            paddingLeft: sizes[0],
             borderBottom: `groove ${sizes[1]} ${color(
               colors.blue,
             ).fade(0.4)}`,

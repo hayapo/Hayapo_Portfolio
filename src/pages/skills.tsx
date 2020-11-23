@@ -11,6 +11,11 @@ import { sizes, mq, colors } from '../theme';
 
 import {
     Title,
+    SubTitle,
+    Icon,
+    Paragraph,
+    LinkText,
+    Table,
 } from '../components/atoms';
 
 const Skills: React.FCX = ({ className }) => (
