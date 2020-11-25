@@ -3,6 +3,11 @@ import React from 'react';
 import Img from 'gatsby-image';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
+import { colors } from '../../theme';
+
+const HeaderColor = css({
+  backgroundColor: colors.white,
+})
 
 const HeaderLogo = css({
   marginRight: 'auto',
@@ -20,7 +25,7 @@ const Component: React.FCX = ({ className }) => {
     query MyQuery {
       file(relativePath: { eq: "circle_icon.png" }) {
         childImageSharp {
-          fixed(width: 90, height: 90) {
+          fixed(width: 70, height:70) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -29,7 +34,7 @@ const Component: React.FCX = ({ className }) => {
   `);
 
   return (
-    <header className={className}
+    <header className={className} css={HeaderColor}
     >
       <div css={HeaderLogo}>
         <Link to="/" aria-label="HOME">
@@ -55,23 +60,19 @@ const Component: React.FCX = ({ className }) => {
 };
 
 const StyledComponent = styled(Component)`
-  position: flex;
+  position: fix;
   top: 0;
   left: 0;
-  z-index: 10;
+  height: 70px;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-
   > nav {
-    padding: 2rem;
     > ul {
       display: flex;
-      justify-content: center;
-      list-style: none;
+      padding: 1rem;
       > li {
         > a {
-          padding: 2rem;
+          padding: 1rem;
         }
       }
     }

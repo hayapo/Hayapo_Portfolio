@@ -11,16 +11,14 @@ import { sizes, mq, colors } from '../theme';
 
 import {
     Title,
-    SubTitle,
-    Icon,
-    Paragraph,
-    LinkText,
-    Table,
+    Emoji
 } from '../components/atoms';
 
 const Skills: React.FCX = ({ className }) => (
     <main className={className}>
-        <Title color={colors.blue}>SKILLS</Title>
+        <Title color={colors.black}>
+            <Emoji symbol="🤹 " />
+                SKILLS</Title>
         <SkillCards />
     </main>
 );
@@ -29,9 +27,9 @@ const StyledSkills = styled(Skills)`
     ${baseStyle};
 `;
 
-export default () => (
+export default  ({ path }: { path: string }): JSX.Element => (
     <>
-        <SEO title='Skills' pathname='/skills' />
+        <SEO title='Skills' pathname={path}/>
         <StyledSkills />
     </>
 );

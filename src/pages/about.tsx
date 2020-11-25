@@ -1,11 +1,11 @@
 import React from 'react';
 import { SEO } from 'src/components';
 import { baseStyle } from 'src/styles';
-import { graphql } from 'gatsby';
 import { css } from '@emotion/core';
 import { sizes, mq, colors } from '../theme';
 import styled from '@emotion/styled';
 import {AnyImage} from '../components'
+
 import {
   Title,
   SubTitle,
@@ -13,6 +13,7 @@ import {
   Paragraph,
   LinkText,
   Table,
+  Emoji
 } from '../components/atoms';
 
 
@@ -57,7 +58,9 @@ const SkillStack = css({
 
 const Component: React.FCX = ({ className }) => (
   <main className={className}>
-    <Title color={colors.blue}>ABOUT</Title>
+    <Title color={colors.black}>
+      <Emoji symbol="📑" label="about"/>
+      ABOUT</Title>
     <section css={AboutContainer}>
       <Icon>
         <div style={{ maxWidth: `400px`, marginBottom: `1.45rem`, justifyContent: 'center' }}>
@@ -66,7 +69,9 @@ const Component: React.FCX = ({ className }) => (
       </Icon>
       <article>
         <section className="profile">
-          <SubTitle>僕について</SubTitle>
+          <SubTitle>
+            <Emoji symbol=" 🙋‍♂️ " />
+            僕について</SubTitle>
             <div className="paragraph">
               <Paragraph>
                 埼玉県出身で現在は名古屋住み。
@@ -86,7 +91,10 @@ const Component: React.FCX = ({ className }) => (
             </div>
         </section>
         <section className="profile">
-          <SubTitle>研究とか</SubTitle>
+          <SubTitle>
+            <Emoji symbol="🎓 " />
+            研究とか
+          </SubTitle>
             <div className="paragraph">
               <Paragraph>
                 ComputerScienceと認知科学に興味があります。
@@ -97,7 +105,9 @@ const Component: React.FCX = ({ className }) => (
             </div>
         </section>
         <section className="profile">
-          <SubTitle>好きなものとか</SubTitle>
+          <SubTitle>
+            <Emoji symbol="❤️ " />
+            好きなものとか</SubTitle>
           <div className="paragraph">
             <Paragraph>
               ゲームとアニメとガジェットとテック系のことが大好きです

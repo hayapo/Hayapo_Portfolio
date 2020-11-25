@@ -8,6 +8,7 @@ import {
 } from '../../../theme';
 import { color } from 'csx';
 import { BottomIn } from '../../../keyframes';
+import { Emoji } from '../Emoji'
 
 export const Table: React.FC = ({ children }) => {
   const [ref, inView] = useInView({
@@ -18,15 +19,14 @@ export const Table: React.FC = ({ children }) => {
       ref={ref}
       css={{
         margin: `${sizes[16]} auto`,
-        borderTop: `solid ${sizes[1]} ${colors.blue}`,
-        borderBottom: `solid ${sizes[1]} ${colors.blue}`,
+        borderTop: `solid ${sizes[1]} ${colors.black}`,
+        borderBottom: `solid ${sizes[1]} ${colors.black}`,
         borderCollapse: 'collapse',
         width: '100%',
         textAlign: 'center  ',
         '& thead': {
-          background: `${color(colors.lightBlue).fade(0.6)}`,
+          
           '& tr th': {
-            color: colors.white,
             fontWeight: typography.fontWeights.black,
             paddingLeft: sizes[0],
             borderBottom: `groove ${sizes[1]} ${color(
@@ -37,7 +37,6 @@ export const Table: React.FC = ({ children }) => {
         '& tbody': {
           
           '& tr td': {
-            color: colors.blue,
             fontWeight: typography.fontWeights.black,
             paddingLeft: sizes[0],
             borderBottom: `groove ${sizes[1]} ${color(
@@ -53,13 +52,13 @@ export const Table: React.FC = ({ children }) => {
       <thead>
         <tr>
           <th>年</th>
-          <th>About</th>
+          <th>内容</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>1999</td>
-          <td>爆誕<br/>(純粋無垢の権化)</td>
+          <td>爆誕<Emoji symbol="👶"/><br/>(純粋無垢の権化)</td>
         </tr>
         <tr>
           <td>2015</td>

@@ -3,6 +3,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import SkillsMDX from './skills.mdx';
+import { Emoji } from '../../atoms'
 
 const SkillCards: React.FCX = ({ className }) => (
     <section className={className}>

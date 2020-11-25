@@ -11,7 +11,7 @@ export const SubTitle: React.FCX = ({ children }) => {
         <h2
         ref={ref}
         css={{
-            color: colors.blue,
+            color: colors.black,
             opacity: inView ? 1 : 0,
             animation: inView ? `${BottomIn} 0.5s ease-out` : 0,
             '& i': {

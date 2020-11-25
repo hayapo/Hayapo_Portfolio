@@ -5,7 +5,7 @@ export const colors = {
     red: '#c45c66',
     peach: '#faf7d9',
     white: '#ffffff',
-    black: '#1b1c1d',
+    black: '#454545',
     gray: '#636366',
     lightgray: '#D1D1D6',
 } as const;

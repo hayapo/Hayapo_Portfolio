@@ -11,6 +11,7 @@ import {
   Paragraph,
   LinkText,
   Table,
+  Emoji
 } from '../components/atoms';
 
 const HeroImage = css({
@@ -20,7 +21,9 @@ const HeroImage = css({
 
 const Component: React.FCX = ({ className }) => (
   <main className={className}>
-    <Title color={colors.blue}>Welcome my site!</Title>
+    <Title color={colors.black}>
+      <Emoji symbol='👾 ' />
+      Welcome my site!</Title>
     <div css={HeroImage}>
       <AnyImage filename='HeroImage.png'></AnyImage>
     </div>

@@ -48,7 +48,7 @@ const Footer: React.FCX = ({ className }) => (
   <footer className={className}>
     <div css={FooterContainer}>
             <p>Built with Gatsby</p>
-            <p>© 2020 Saito Hayato All Rights Reserved.</p>
+            <p>© 2020 Hayapo All Rights Reserved.</p>
         <div css={FooterLink} >
           <a
                 href="https://twitter.com/hayapo_hip"
