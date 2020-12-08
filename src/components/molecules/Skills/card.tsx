@@ -35,6 +35,9 @@ const Card: React.FCX<Props> = ({ className, id, children }) => {
                     marginLeft: sizes[1],
                     alignContent:'center',
                 },
+                '& h4':{
+                    
+                },
                 '& p': {
                     color: colors.black,
                     marginTop: sizes[8],
@@ -45,7 +48,7 @@ const Card: React.FCX<Props> = ({ className, id, children }) => {
                     fontWeight: typography.fontWeights.bold,
                     marginTop: sizes[3],
                     marginLeft: sizes[0],
-                    background: `linear-gradient(transparent 50%, #CCCC66 50%)`,
+                    background: `linear-gradient(transparent 50%, #CCCC66 50%)`,    
                 },
                 '& i':{
                     animation: inView ? `${LeftIn} 0.5s ease-out`:0,

@@ -59,7 +59,7 @@ const SkillStack = css({
 const Component: React.FCX = ({ className }) => (
   <main className={className}>
     <Title color={colors.black}>
-      <Emoji symbol="📑" label="about"/>
+      <Emoji symbol="📑 " label="about"/>
       ABOUT</Title>
     <section css={AboutContainer}>
       <Icon>

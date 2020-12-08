@@ -23,7 +23,7 @@ const HeaderLogo = css({
 const Component: React.FCX = ({ className }) => {
     const data = useStaticQuery<GatsbyTypes.MyQueryQuery>(graphql`
     query MyQuery {
-      file(relativePath: { eq: "circle_icon.png" }) {
+      file(relativePath: { eq: "TF_icon.png" }) {
         childImageSharp {
           fixed(width: 70, height:70) {
             ...GatsbyImageSharpFixed

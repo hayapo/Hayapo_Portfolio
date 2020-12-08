@@ -23,7 +23,9 @@ const Component: React.FCX = ({ className }) => (
   <main className={className}>
     <Title color={colors.black}>
       <Emoji symbol='👾 ' />
-      Welcome my site!</Title>
+      Welcome my site!
+      <Emoji symbol=' 👾' />
+      </Title>
     <div css={HeroImage}>
       <AnyImage filename='HeroImage.png'></AnyImage>
     </div>
