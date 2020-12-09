@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://gatsby-starter-hpp.netlify.com/sitemap.xml
-Host: https://gatsby-starter-hpp.netlify.com
+Sitemap: https://hayapo.tech/sitemap.xml
+Host: https://hayapo.tech
