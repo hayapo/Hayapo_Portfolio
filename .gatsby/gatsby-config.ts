@@ -11,7 +11,7 @@ require('dotenv').config({
 
 const siteMetadata = {
   siteTitle,
-  siteTitleAlt: ``,
+  siteTitleAlt,
   siteHeadline: ``,
   siteUrl,
   siteDescription,

@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { useAnyImage, useSiteBuildTime, useSiteMetadata,useSiteBanner } from 'src/hooks';
+import { useAnyImage, useSiteBuildTime, useSiteMetadata } from 'src/hooks';
 import { DeepPartial, DeepReadonly } from 'utility-types';
 
 type Props = Readonly<
@@ -75,7 +75,7 @@ type JsonLdConfigProps = DeepReadonly<
 const SEO: React.FCX<Props> = ({ title = ``, description = ``, pathname = ``, image = `` }) => {
   const metadata = useSiteMetadata() || {};
   const buildTime = useSiteBuildTime();
-  const banner = useSiteBanner();
+  const banner = useAnyImage(`icon_TF.png`);
   const icon = useAnyImage(`square_icon.png`);
 
   const {
@@ -218,7 +218,7 @@ const SEO: React.FCX<Props> = ({ title = ``, description = ``, pathname = ``, im
       <meta name='twitter:title' content={seo.title} />
       <meta name='twitter:url' content={seo.url} />
       <meta name='twitter:description' content={seo.description} />
-      <meta name='twitter:image' content={seo.banner} />
+      <meta name='twitter:image' content={seo.image} />
       <meta name='twitter:image:alt' content={seo.description} />
       <meta name='twitter:creator' content={author} />
       <script type='application/ld+json'>{JSON.stringify(jsonLdConfigs)}</script>
