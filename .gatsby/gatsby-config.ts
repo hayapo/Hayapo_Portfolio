@@ -104,7 +104,7 @@ export default {
         background_color: backgroundColor,
         theme_color: themeColor,
         display: `standalone`,
-        icon: `./assets/square_icon.png`,
+        icon: `./assets/square_TF.png`,
       },
     },
     `gatsby-plugin-offline`,
